@@ -80,7 +80,7 @@ module.exports = withOffline(withWorkers(withCSS({
 
       config.plugins.push(
         new PacktrackerPlugin({
-          project_token: 'dc2fe0d9-6d34-4f76-b25b-b6af3f16822f',
+          project_token: '31d5ae10-0752-4aca-b55d-db19eb13c9f8',
           branch: 'master',
           upload: true
         })
