@@ -9,7 +9,7 @@ export default {
             name: 'netlify',
             options: {
               description:
-                'NOTE: Because these sites are static builds, they need to be re-deployed to see the changes when documents are published.',
+                                'NOTE: Because these sites are static builds, they need to be re-deployed to see the changes when documents are published.',
               sites: [
                 {
                   buildHookId: '5e5b4d1aee027c760eb6b94c',
@@ -40,7 +40,12 @@ export default {
     {name: 'project-users', layout: {height: 'auto'}},
     {
       name: 'document-list',
-      options: {title: 'Recently edited', order: '_updatedAt desc', limit: 10, types: ['page']},
+      options: {
+        title: 'Recently edited',
+        order: '_updatedAt desc',
+        limit: 10,
+        types: ['page']
+      },
       layout: {width: 'medium'}
     }
   ]

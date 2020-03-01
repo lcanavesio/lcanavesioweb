@@ -6,30 +6,30 @@ export default {
     {
       name: 'heading',
       type: 'string',
-      title: 'Heading',
+      title: 'Heading'
     },
     {
       name: 'subtitle',
       type: 'string',
-      title: 'Subheading',
+      title: 'Subheading'
     },
     {
       name: 'actionUrl',
       type: 'url',
       title: 'URL to Mailchimp signup',
       description:
-        'URL for the Mailchimp signup form. Remember to add your domain in your mailchimp settings to avoid CORS errors.',
-    },
+                'URL for the Mailchimp signup form. Remember to add your domain in your mailchimp settings to avoid CORS errors.'
+    }
   ],
   preview: {
     select: {
-      title: 'heading',
+      title: 'heading'
     },
-    prepare({ title }) {
+    prepare ({title}) {
       return {
         title,
-        subtitle: 'Mailchimp newsletter signup section',
-      };
-    },
-  },
-};
+        subtitle: 'Mailchimp newsletter signup section'
+      }
+    }
+  }
+}

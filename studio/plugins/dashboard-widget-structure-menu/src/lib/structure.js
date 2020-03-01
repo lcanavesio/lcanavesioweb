@@ -20,11 +20,11 @@ export function isSubscribable (thing) {
 export function isStructure (structure) {
   return (
     structure &&
-    (typeof structure === 'function' ||
-      typeof structure.serialize !== 'function' ||
-      typeof structure.then !== 'function' ||
-      typeof structure.subscribe !== 'function' ||
-      typeof structure.type !== 'string')
+        (typeof structure === 'function' ||
+            typeof structure.serialize !== 'function' ||
+            typeof structure.then !== 'function' ||
+            typeof structure.subscribe !== 'function' ||
+            typeof structure.type !== 'string')
   )
 }
 
@@ -72,10 +72,10 @@ export function loadStructure () {
     // source has changed without fixing the problem. In this case, keep showing the error
     if (
       __DEV__ &&
-      prevStructureError &&
-      structure &&
-      structure.constructor.name === 'Object' &&
-      Object.keys(structure).length === 0
+            prevStructureError &&
+            structure &&
+            structure.constructor.name === 'Object' &&
+            Object.keys(structure).length === 0
     ) {
       return throwError(prevStructureError)
     }
