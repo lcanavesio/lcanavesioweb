@@ -5,6 +5,7 @@ import Head from 'next/head'
 import {LogoJsonLd} from 'next-seo'
 import Header from './Header'
 import Footer from './Footer'
+import Sidebar from './Sidebar'
 
 function Layout (props) {
   const {config, children} = props
@@ -24,6 +25,9 @@ function Layout (props) {
       </Head>
       <div className='container'>
         <Header title={title} navItems={mainNavigation} logo={logo} />
+        <Sidebar
+          navItems={mainNavigation}
+        />
         <div className='content'>{children}</div>
         <Footer navItems={footerNavigation} text={footerText} />
         {logoUrl && url && <LogoJsonLd url={url} logo={logoUrl} />}
