@@ -21,8 +21,15 @@ export default {
       of: [
         { type: 'hero' },
         { type: 'imageSection' },
-        { type: 'mailchimp' },
+        { type: 'emailForm' },
         { type: 'textSection' },
+        { type: 'workExperience' },
+        { type: 'projectsSection' },
+        { type: 'education' },
+        { type: 'skillSet' },
+        { type: 'basicImage' },
+        { type: 'socialLinks' },
+        { type: 'sectionHeader' }
       ],
     },
     {
