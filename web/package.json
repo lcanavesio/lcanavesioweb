@@ -9,6 +9,7 @@
     "format": "prettier-eslint --write \"**/*.js\" \"!.next/**\" \"!node_modules/**\" \"!out/**\"",
     "lint": "eslint .",
     "start": "next start"
+
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
